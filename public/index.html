@@ -1,0 +1,102 @@
+<html>
+  <head>
+    <title>Robot Guardian | Defender of the Universe</title>
+	 <meta name="description" content="Robot Guardian, defender of the universe, is made of some combination of metals and/or alloys -- the exact proportions thereof are not clear. He also has laser eyes.">
+  <meta name="keywords" content="robot,guardian,childrens story,childrens song">
+<link rel="shortcut icon" href="https://static.wixstatic.com/media/f48605_355975e804b54b6096e77d95724a00e4%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/f48605_355975e804b54b6096e77d95724a00e4%7Emv2.png" type="image/png"/>
+<link rel="apple-touch-icon" href="https://static.wixstatic.com/media/f48605_355975e804b54b6096e77d95724a00e4%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/f48605_355975e804b54b6096e77d95724a00e4%7Emv2.png" type="image/png"/>
+	<link type="text/html" rel="stylesheet" href="style.css" />
+	<style>
+	.center { margin: 0 auto; width: 400px; }
+
+body, html {
+    height: 100%;
+}
+
+.bg { 
+    /* The image used */
+    background-image: url("background.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#vid {
+	position: relative 
+}
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+#vid {
+	position: relative 
+}
+
+#footer { opacity: 0; 
+    position:fixed;
+    bottom:0;
+    left:50%;
+    margin-left:-200px; /*negative half the width */
+    width:400px;
+    height:100px;
+	} 
+
+#footer:hover {
+  opacity: 1;
+}
+
+#footer p{
+	color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+a:link {
+	color: white;
+    text-decoration: none;
+}
+
+a:visited {
+	color: white;
+    text-decoration: none;
+}
+
+a:hover {
+	color: white;
+    text-decoration: underline;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(function(){  // $(document).ready shorthand
+  $('#videoContainer').hide().fadeIn(1500);
+});
+
+</script>
+  </head>
+  <body>
+  <!--The character and images of and song and lyrics for Robot Guardian are all copyrighted by Zach Rodis who wrote, performed, and animated the video. Zach is also the illustrator of Snow Pirates, a children's book published by Circle Up Stories (www.circleupstories.com). -->
+  <div class="bg"/>
+    <div id= "videoContainer" class="vid">
+		<video class="center" id="videoPlayer" width="400" height="300" controlsList="nodownload" controls autoplay> 
+			<source src="video" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+	</div>
+	<div id="footer">
+	<p><b><a href="http://www.circleupstories.com">Circle Up Stories</a></b></p>
+	</div>
+    <!--<button id="toggleButton">Start/Stop</button>
+    <script src="index.js"></script>-->
+  </body>
+</html>
